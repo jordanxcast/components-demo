@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 export type BaseInputProps = {
@@ -6,13 +6,16 @@ export type BaseInputProps = {
 	onChange: (value: string) => void;
 	placeholder?: string;
 	type?: string;
+	id: string;
 };
 
+// TODO: add all current functionality from back-office input here (ex. adornments)
 export function BaseInput(props: BaseInputProps) {
-	const { value, onChange, placeholder, type = "text" } = props;
+	const { value, onChange, placeholder, type = "text", id } = props;
 
 	return (
-		<StyledInput
+		<StyledBaseInput
+			id={id}
 			type={type}
 			value={value}
 			placeholder={placeholder}
@@ -21,7 +24,7 @@ export function BaseInput(props: BaseInputProps) {
 	);
 }
 
-export const StyledInput = styled.input`
+export const StyledBaseInput = styled.input`
 	padding: 12px 20px;
 	border: 1px solid #a0a8ab;
 	border-radius: 6px;
