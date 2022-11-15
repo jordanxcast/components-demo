@@ -32,6 +32,7 @@ export const StyledBaseSelect = styled.select`
 	line-height: 20px;
 	display: flex;
 	align-items: center;
+  width: inherit;
 	letter-spacing: 0.005em;
 
   /* custom arrow styles */

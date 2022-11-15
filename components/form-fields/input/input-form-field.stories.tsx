@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { InputFormField } from "./input-form-field";
 
 export default {
-	title: "Components/FormFields/Input",
+	title: "Components/FormFields/InputFormField",
 	component: InputFormField,
 } as ComponentMeta<typeof InputFormField>;
 
