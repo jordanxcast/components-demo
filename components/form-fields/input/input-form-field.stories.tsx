@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { InputFormField } from "./input-form-field";
 
 export default {
-	title: "Components/FormFields/Input",
+	title: "Components/FormFields/InputFormField",
 	component: InputFormField,
 } as ComponentMeta<typeof InputFormField>;
 
@@ -14,5 +14,6 @@ const Template: ComponentStory<typeof InputFormField> = (args) => (
 
 export const InputFormFieldExample = Template.bind({});
 InputFormFieldExample.args = {
-	label: "This is a label",
+	LabelProps: { value: "This is a label:", htmlFor: "test-input-form-field-id" },
+	InputProps: { id: "test-input-form-field-id" },
 };

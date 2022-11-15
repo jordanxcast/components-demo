@@ -3,15 +3,16 @@ import styled from "styled-components";
 
 export type LabelProps = {
 	value: string;
+	htmlFor: string;
 };
 
 export function Label(props: LabelProps) {
-	const { value } = props;
+	const { value, htmlFor } = props;
 
-	return <StyledLabel>{value}:</StyledLabel>;
+	return <StyledLabel htmlFor={htmlFor}>{value}</StyledLabel>;
 }
 
-export const StyledLabel = styled.p`
+export const StyledLabel = styled.label`
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;

@@ -17,8 +17,4 @@ export const StyledFormFieldWrapper = styled.div`
 	width: 100%;
 	grid-column-gap: 24px;
 	align-items: center;
-
-	input {
-		grid-column: 2 / span 3;
-	}
 `;
